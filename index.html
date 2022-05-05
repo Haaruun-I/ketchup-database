@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ketchup Database</title>
+</head>
+<body>
+    <main>
+        <h1>Ketchup Database</h1>
+        <p>A croudsourced database of ketchup flavors around the world (results comming soon)</p>
+        
+        <form data-netlify method="post" name="ketchup">
+            <fieldset class="flex two">
+                <label for="brand">Brand Name: <input type="text" name="brand"></label>
+                <label for="country">Country of Origin: <input type="text" name="country"></label>
+            </fieldset>
+            
+            <fieldset>
+                <h2>Sweet - Sour</h2>
+                <p>Does it taste like it can give you diabeties?</p>
+                <span class="star-cb-group">
+                  <input type="radio" id="rating-5" name="sweet-sour" value="5" />
+                  <label for="rating-5">5</label>
+                  <input type="radio" id="rating-4" name="sweet-sour" value="4" />
+                  <label for="rating-4">4</label>
+                  <input type="radio" id="rating-3" name="sweet-sour" value="3" checked/>
+                  <label for="rating-3">3</label>
+                  <input type="radio" id="rating-2" name="sweet-sour" value="2" />
+                  <label for="rating-2">2</label>
+                  <input type="radio" id="rating-1" name="sweet-sour" value="1" />
+                  <label for="rating-1">1</label>
+                  <input type="radio" id="rating-0" name="sweet-sour" value="0" class="star-cb-clear" />
+                  <label for="rating-0">0</label>
+                </span>
+            </fieldset>
+
+            <fieldset>
+                <h2>Salty - Fresh</h2>
+                <p>How much fresh tomato taste is there</p>
+                <span class="star-cb-group">
+                  <input type="radio" id="rating-5" name="salty-fresh" value="5" />
+                  <label for="rating-5">5</label>
+                  <input type="radio" id="rating-4" name="salty-fresh" value="4" />
+                  <label for="rating-4">4</label>
+                  <input type="radio" id="rating-3" name="salty-fresh" value="3" checked/>
+                  <label for="rating-3">3</label>
+                  <input type="radio" id="rating-2" name="salty-fresh" value="2" />
+                  <label for="rating-2">2</label>
+                  <input type="radio" id="rating-1" name="salty-fresh" value="1" />
+                  <label for="rating-1">1</label>
+                  <input type="radio" id="rating-0" name="salty-fresh" value="0" class="star-cb-clear" />
+                  <label for="rating-0">0</label>
+                </span>
+            </fieldset>
+
+            <fieldset class="flex two">
+                <label for="email">Email or Discord: <input type="email" name="email"></label>
+                <label for="proof">Picture Proof: <input type="file" name="proof"></label>
+                <input type="submit" class="full" value="Submit Ketchup">
+        </form>
+    </main>
+</body>
+</html>
