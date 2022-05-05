@@ -34,6 +34,10 @@ input[type="submit"] {
     background-color: red;
 }
 
+.hidden {
+    display: none;
+}
+
 .star-cb-group {
     font-size: 0;
     unicode-bidi: bidi-override;
