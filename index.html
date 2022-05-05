@@ -59,10 +59,18 @@
                 </span>
             </fieldset>
 
+            <div data-netlify-recaptcha="true"></div>
+
             <fieldset class="flex two">
                 <label for="email">Discord or Email: <input type="text" name="email"></label>
                 <label for="proof">Picture Proof: <input type="file" name="proof"></label>
                 <input type="submit" class="full" value="Submit Ketchup">
+            </fieldset>
+            <p class="hidden">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
         </form>
     </main>
 </body>
