@@ -1,5 +1,5 @@
 body {
-    padding: 5vh 20vw;
+    padding: 20vh 2.5vw;
     background-color: red;
 }
 
@@ -7,7 +7,10 @@ main, header {
     border-radius: 10px;
     
     width: 60vw;
+    min-width: 250px;
+
     padding: 10px;
+    margin: auto;
     margin-bottom: 20px;
     
     background-color: white;
@@ -16,7 +19,6 @@ main, header {
 main {
     min-height: 80vh;
 
-    margin: auto;
     padding: 25px;
     margin-bottom: 5vh;
 }
@@ -48,10 +50,14 @@ input[type="submit"] {
     font-size: 0;
     unicode-bidi: bidi-override;
     direction: rtl;
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 0;
   }
 
   .star-cb-group * {
-    font-size: 2.5rem;
+    font-size: clamp(25px, 50px, 10vw);
   }
   .star-cb-group > input {
     display: none;
@@ -61,7 +67,7 @@ input[type="submit"] {
     display: inline-block;
     overflow: hidden;
     text-indent: 9999px;
-    width: 10vw;
+    max-width: 2.5rem;
 
     white-space: nowrap;
     cursor: pointer;
