@@ -46,6 +46,10 @@ input[type="submit"] {
     display: none;
 }
 
+div[type="data-netlify-recaptcha"] {
+  max-width: 100%; /* Hopefully fix overflow error */
+}
+
 .star-cb-group {
     font-size: 0;
     unicode-bidi: bidi-override;
